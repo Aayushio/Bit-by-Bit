@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+body {
+    background-color: #442680;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.subject-heading {
+    font-size: 72px;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffa07a;
+}
+
+.description {
+    font-size: 25px;
+    color: #4682b4;
+    margin-bottom: 40px;
+    background-color: #fafad2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blocks-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    background-color: #fff;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, border-color 0.2s;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.block:hover {
+    transform: scale(1.1);
+    border-color: #ff6347;
+}
+
+.block-math {
+    background-color: #f08080;
+    color: #fff;
+}
+
+.block-science {
+    background-color: #48d1cc;
+    color: #fff;
+}
+
+.block h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .blocks-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
